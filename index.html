@@ -161,7 +161,7 @@
             transform: perspective(500px) rotateX(20deg);
         }
 
-       /* Медіа-запити для iPhone SE (320px) та подібних малих телефонів */
+    /* Медіа-запити для дуже малих телефонів (до 320px) */
 @media (max-width: 320px) {
     h1 {
         font-size: 1.8rem;
@@ -181,6 +181,29 @@
     }
     .flower {
         font-size: 0.9rem;
+    }
+}
+
+/* Медіа-запити для iPhone 5/SE (320px) */
+@media (max-width: 320px) and (min-resolution: 2dppx) {
+    h1 {
+        font-size: 1.9rem;
+    }
+    .text-3d {
+        font-size: 1.9rem;
+    }
+    .eight {
+        width: 55px;
+        height: 95px;
+    }
+    .heart {
+        font-size: 0.75rem;
+    }
+    .glow {
+        font-size: 0.85rem;
+    }
+    .flower {
+        font-size: 0.95rem;
     }
 }
 
@@ -253,6 +276,29 @@
     }
 }
 
+/* Медіа-запити для Xiaomi Redmi Note 8 Pro (393px) */
+@media (max-width: 393px) {
+    h1 {
+        font-size: 2.3rem;
+    }
+    .text-3d {
+        font-size: 2.3rem;
+    }
+    .eight {
+        width: 75px;
+        height: 140px;
+    }
+    .heart {
+        font-size: 0.95rem;
+    }
+    .glow {
+        font-size: 1.05rem;
+    }
+    .flower {
+        font-size: 1.15rem;
+    }
+}
+
 /* Медіа-запити для iPhone 12/13/14 Pro Max (428px) */
 @media (max-width: 428px) {
     h1 {
@@ -273,29 +319,6 @@
     }
     .flower {
         font-size: 1.2rem;
-    }
-}
-
-/* Медіа-запити для Google Pixel 5 (393px) */
-@media (max-width: 393px) {
-    h1 {
-        font-size: 2.3rem;
-    }
-    .text-3d {
-        font-size: 2.3rem;
-    }
-    .eight {
-        width: 75px;
-        height: 140px;
-    }
-    .heart {
-        font-size: 0.95rem;
-    }
-    .glow {
-        font-size: 1.05rem;
-    }
-    .flower {
-        font-size: 1.15rem;
     }
 }
 
@@ -434,6 +457,29 @@
     }
     .flower {
         font-size: 2.5rem;
+    }
+}
+
+/* Медіа-запити для дуже великих екранів (2560px і більше) */
+@media (min-width: 2560px) {
+    h1 {
+        font-size: 6rem;
+    }
+    .text-3d {
+        font-size: 6rem;
+    }
+    .eight {
+        width: 200px;
+        height: 300px;
+    }
+    .heart {
+        font-size: 2.5rem;
+    }
+    .glow {
+        font-size: 2.5rem;
+    }
+    .flower {
+        font-size: 3rem;
     }
 }
     </style>
